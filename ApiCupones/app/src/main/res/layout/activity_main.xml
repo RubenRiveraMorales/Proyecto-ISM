@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple"
+        app:subtitleTextColor="@color/white"
+        android:elevation="4dp"
+        app:popupTheme="@color/purple" />
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="220dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="394dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="215dp"
+        android:textAlignment="center"
+        app:srcCompat="@drawable/baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivPromos"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="417dp"
+        app:srcCompat="@drawable/money_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="559dp"
+        android:text="Lista de promociones"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="320dp"
+        android:textAlignment="center"
+        android:text="Perfil"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/ivCerrarSesion"
+        android:layout_width="74dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="614dp"
+        app:srcCompat="@drawable/baseline_logout_24" />
+
+</RelativeLayout>
