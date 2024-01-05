@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clienteescritorionutricion.FXMLInicioSesionController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="57.0" prefHeight="47.0" prefWidth="158.0" text="Iniciar sesion" textAlignment="CENTER" textFill="#27bfd0">
+         <font>
+            <Font name="Franklin Gothic Book" size="25.0" />
+         </font></Label>
+      <Button defaultButton="true" layoutX="106.0" layoutY="289.0" mnemonicParsing="false" onAction="#iniciarSesion" opacity="0.8" prefHeight="38.0" prefWidth="98.0" text="Iniciar" textFill="#3eb8e8" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Franklin Gothic Book" size="15.0" />
+         </font></Button>
+      <TextField fx:id="tfNumeroP" alignment="CENTER" layoutX="45.0" layoutY="135.0" prefHeight="31.0" prefWidth="208.0" promptText="Numero de personal" />
+      <PasswordField fx:id="tfContraseña" alignment="CENTER" layoutX="45.0" layoutY="219.0" prefHeight="31.0" prefWidth="208.0" promptText="Contraseña" />
+      <Label fx:id="lbErrorPersonal" layoutX="335.0" layoutY="247.0" prefHeight="16.0" prefWidth="316.0" textFill="#e10606">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbErrorPassword" layoutX="335.0" layoutY="350.0" prefHeight="16.0" prefWidth="332.0" textFill="#d71111">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="516.0" fitWidth="751.0" layoutX="293.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/clin.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

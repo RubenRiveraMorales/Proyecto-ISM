@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="1040.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="clienteescritorionutricion.FXMLFormularioDomicilioController">
+   <children>
+      <AnchorPane prefHeight="99.0" prefWidth="1040.0" style="-fx-background-color: #A1DBD4;">
+         <children>
+            <Label layoutX="402.0" layoutY="32.0" text="Domicilio del paciente">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfCalle" layoutX="65.0" layoutY="158.0" prefHeight="31.0" prefWidth="844.0" promptText="Calle" />
+      <TextField fx:id="tfNumero" layoutX="65.0" layoutY="227.0" prefHeight="31.0" prefWidth="173.0" promptText="Numero" />
+      <TextField fx:id="tfColonia" layoutX="65.0" layoutY="310.0" prefHeight="31.0" prefWidth="507.0" promptText="Colonia" />
+      <TextField fx:id="tfCodigoPostal" layoutX="65.0" layoutY="377.0" prefHeight="31.0" prefWidth="221.0" promptText="Codigo Postal" />
+      <Label layoutX="71.0" layoutY="128.0" text="Calle" />
+      <Label layoutX="71.0" layoutY="200.0" text="Numero" />
+      <Label layoutX="73.0" layoutY="281.0" text="Colonia" />
+      <Label layoutX="74.0" layoutY="356.0" text="Condigo Postal" />
+      <Button layoutX="795.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnGuardar" text="Guardar" />
+      <Button layoutX="888.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnCancelar" text="Cancelar" />
+      <ComboBox fx:id="cdEstado" layoutX="77.0" layoutY="460.0" prefWidth="150.0" />
+      <ComboBox fx:id="cdMunicipio" layoutX="325.0" layoutY="460.0" prefWidth="150.0" />
+      <Label layoutX="81.0" layoutY="432.0" text="Estado" />
+      <Label layoutX="334.0" layoutY="432.0" text="Municipio" />
+   </children>
+</AnchorPane>

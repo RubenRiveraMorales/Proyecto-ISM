@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clienteescritorionutricion.FXMLHomeController">
+   <children>
+      <BorderPane layoutX="-2.0" layoutY="-1.0" prefHeight="116.0" prefWidth="913.0">
+         <top>
+            <Label text="Bienvendio al sistema Clinica" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Book" size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <left>
+            <Label fx:id="lbNombreMedico" text="Nombre" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Label fx:id="lbNumPersonal" text="No.Personal" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <Label fx:id="lbCedula" text="Cedula" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Button layoutX="377.0" layoutY="206.0" mnemonicParsing="false" onAction="#btGestionarPaciente" text="Gestion de pacientes" />
+   </children>
+</AnchorPane>

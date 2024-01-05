@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="647.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clienteescritorionutricion.FXMLAdminPacienteController">
+   <children>
+      <BorderPane prefHeight="51.0" prefWidth="982.0" style="-fx-background-color: #2BE3F0;">
+         <center>
+            <Label text="Gestion de pacientes" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Book" size="18.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <TableView fx:id="tvPaciente" layoutY="116.0" prefHeight="538.0" prefWidth="982.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="170.0" text="Nombre" />
+          <TableColumn fx:id="colApellidoPaterno" prefWidth="157.0" text="Apellido Paterno" />
+            <TableColumn fx:id="colApellidoMaterno" prefWidth="153.0" text="Apellido Materno" />
+            <TableColumn fx:id="colFechaNacimiento" prefWidth="170.0" text="Fecha de nacimiento" />
+            <TableColumn fx:id="colCorreo" prefWidth="173.0" text="Correo" />
+            <TableColumn fx:id="colTelefono" prefWidth="157.0" text="Telefono" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfBusquedaPaciente" layoutX="6.0" layoutY="72.0" promptText="Buscar paciente" />
+      <Button layoutX="373.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnAgregar" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #4BF561;" text="Agregar" />
+      <Button layoutX="520.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnEditar" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #F2FD59;" text="Editar" />
+      <Button layoutX="671.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnEliminar" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #F21717;" text="Eliminar" />
+      <Button layoutX="822.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnDomicilio" prefHeight="31.0" prefWidth="130.0" text="Domicilio" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cliente">
+    <insert id="registrar" parameterType="modelo.pojo.Cliente">
+    INSERT INTO cliente (nombre, apellidoPaterno, apellidoMaterno,telefono,correo,direccion, fechaNacimiento, password)
+    VALUES (#{nombre}, #{apellidoPaterno}, #{apellidoMaterno}, #{telefono}, #{correo}, #{direccion}, #{fechaNacimiento}, #{password})
+    </insert>
+   
+   <select id="clienteByEmail" resultType="modelo.pojo.Cliente">
+    SELECT * FROM cliente
+    WHERE correo = #{correo}
+    </select>
+    
+    <update id="editar" parameterType="modelo.pojo.Cliente">
+        UPDATE cliente
+        SET nombre = #{nombre}, apellidoPaterno=#{apellidoPaterno}, apellidoMaterno=#{apellidoMaterno},telefono=#{telefono}, correo=#{correo}, direccion=#{direccion}, fechaNacimiento=#{fechaNacimiento}, password=#{password}
+        WHERE idCliente = #{idCliente}
+    </update>
+
+
+</mapper>

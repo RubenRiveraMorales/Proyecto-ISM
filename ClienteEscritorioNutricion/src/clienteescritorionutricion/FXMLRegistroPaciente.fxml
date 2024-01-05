@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="763.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clienteescritorionutricion.FXMLRegistroPacienteController">
+   <children>
+      <Label layoutX="57.0" layoutY="41.0" prefHeight="29.0" prefWidth="220.0" text="Registro de pacientes">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="42.0" text="Favor de ingresar los datos">
+         <font>
+            <Font name="Franklin Gothic Book" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="246.0" text="Nombre" />
+      <Label layoutX="353.0" layoutY="304.0" text="Apellido Paterno" />
+      <Label layoutX="353.0" layoutY="371.0" prefHeight="21.0" prefWidth="133.0" text="Apellido Materno" />
+      <Label layoutX="353.0" layoutY="450.0" text="Fecha de Nacimiento" />
+      <Label layoutX="672.0" layoutY="121.0" text="Sexo" />
+      <Label layoutX="670.0" layoutY="246.0" prefHeight="21.0" prefWidth="55.0" text="Peso" />
+      <Label layoutX="670.0" layoutY="314.0" text="Estatura" />
+      <Label layoutX="675.0" layoutY="382.0" text="Talla Inicial" />
+      <Label layoutX="674.0" layoutY="450.0" text="Correo" />
+      <Label layoutX="675.0" layoutY="532.0" text="Telefono" />
+      <Label layoutX="353.0" layoutY="522.0" text="Contraseña" />
+      <TextField fx:id="tfNombre" layoutX="353.0" layoutY="272.0" promptText="Nombre" />
+      <TextField fx:id="tfApellidoPaterno" layoutX="353.0" layoutY="335.0" promptText="Apellido paterno" />
+      <TextField fx:id="tfApellidoMaterno" layoutX="353.0" layoutY="410.0" promptText="Apellido materno" />
+      <TextField fx:id="tfPeso" layoutX="670.0" layoutY="272.0" promptText="Peso" />
+      <TextField fx:id="tfEstatura" layoutX="674.0" layoutY="346.0" promptText="Estatura" />
+      <TextField fx:id="tfTallaInicial" layoutX="674.0" layoutY="410.0" promptText="Talla inicial" />
+      <TextField fx:id="tfCorreo" layoutX="674.0" layoutY="481.0" promptText="Correo" />
+      <TextField fx:id="tfTelefono" layoutX="674.0" layoutY="559.0" promptText="Telefono" />
+      <Button layoutX="816.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnGuardar" text="Guardar" />
+      <PasswordField fx:id="pfContraseña" layoutX="353.0" layoutY="559.0" promptText="Contraseña" />
+      <DatePicker fx:id="tfFechaNacimiento" layoutX="353.0" layoutY="481.0" prefHeight="31.0" prefWidth="187.0" />
+      <RadioButton fx:id="rdMasculino" layoutX="672.0" layoutY="163.0" mnemonicParsing="false" text="Masculino">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgSexo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdFemenino" layoutX="797.0" layoutY="163.0" mnemonicParsing="false" text="Femenino" toggleGroup="$tgSexo" />
+      <ImageView fx:id="ivFoto" fitHeight="211.0" fitWidth="280.0" layoutX="36.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="30.0" layoutY="445.0" mnemonicParsing="false" onAction="#btSeleccionarFoto" text="Seleccionar foto" />
+      <Button layoutX="184.0" layoutY="445.0" mnemonicParsing="false" onAction="#btActualizarFoto" text="Actualizar foto" />
+   </children>
+</AnchorPane>
